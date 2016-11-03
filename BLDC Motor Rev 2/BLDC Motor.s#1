@@ -8901,7 +8901,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="470"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="HALLSENSORS" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="HALL" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="IC2" library="linear" deviceset="78*" device="TV" technology="15"/>
@@ -8994,7 +8994,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="P+4" gate="VCC" x="147.32" y="246.38"/>
 <instance part="R2" gate="G$1" x="147.32" y="226.06" rot="R90"/>
 <instance part="GND4" gate="1" x="147.32" y="215.9"/>
-<instance part="HALLSENSORS" gate="A" x="172.72" y="238.76"/>
+<instance part="HALL" gate="A" x="172.72" y="238.76"/>
 <instance part="GND5" gate="1" x="40.64" y="228.6"/>
 <instance part="IC1" gate="A1" x="208.28" y="220.98"/>
 <instance part="IC2" gate="A1" x="208.28" y="243.84"/>
@@ -9108,7 +9108,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="147.32" y1="218.44" x2="147.32" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HALLSENSORS" gate="A" pin="5"/>
+<pinref part="HALL" gate="A" pin="5"/>
 <wire x1="170.18" y1="233.68" x2="162.56" y2="233.68" width="0.1524" layer="91"/>
 <label x="160.02" y="233.68" size="1.778" layer="95"/>
 </segment>
@@ -9313,7 +9313,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="147.32" y1="241.3" x2="147.32" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HALLSENSORS" gate="A" pin="1"/>
+<pinref part="HALL" gate="A" pin="1"/>
 <wire x1="170.18" y1="243.84" x2="162.56" y2="243.84" width="0.1524" layer="91"/>
 <label x="160.02" y="243.84" size="1.778" layer="95"/>
 </segment>
@@ -9609,7 +9609,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_A" class="0">
 <segment>
-<pinref part="HALLSENSORS" gate="A" pin="2"/>
+<pinref part="HALL" gate="A" pin="2"/>
 <wire x1="170.18" y1="241.3" x2="162.56" y2="241.3" width="0.1524" layer="91"/>
 <label x="154.94" y="241.3" size="1.778" layer="95"/>
 </segment>
@@ -9621,7 +9621,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_B" class="0">
 <segment>
-<pinref part="HALLSENSORS" gate="A" pin="3"/>
+<pinref part="HALL" gate="A" pin="3"/>
 <wire x1="170.18" y1="238.76" x2="162.56" y2="238.76" width="0.1524" layer="91"/>
 <label x="154.94" y="238.76" size="1.778" layer="95"/>
 </segment>
@@ -9633,7 +9633,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_C" class="0">
 <segment>
-<pinref part="HALLSENSORS" gate="A" pin="4"/>
+<pinref part="HALL" gate="A" pin="4"/>
 <wire x1="170.18" y1="236.22" x2="162.56" y2="236.22" width="0.1524" layer="91"/>
 <label x="154.94" y="236.22" size="1.778" layer="95"/>
 </segment>

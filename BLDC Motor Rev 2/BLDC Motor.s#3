@@ -8918,7 +8918,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="TMP36" library="SparkFun" deviceset="TMP36" device="SOIC"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="M"/>
+<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="S" value="OSHW-LOGOS"/>
 <part name="JP2" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP4" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="S2" library="SparkFun" deviceset="SWITCH-SPST" device="PTH_LOCK"/>
@@ -8971,6 +8971,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <sheet>
 <plain>
 <text x="187.96" y="254" size="1.778" layer="91">Supply Voltage: 22.2V</text>
+<text x="325.12" y="15.24" size="1.778" layer="91">2</text>
+<text x="330.2" y="5.08" size="1.778" layer="91">Forrest Kaminski</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9010,7 +9012,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="TMP36" gate="G$1" x="129.54" y="205.74" rot="MR0"/>
 <instance part="P+7" gate="VCC" x="142.24" y="208.28" rot="R270"/>
 <instance part="GND18" gate="1" x="142.24" y="203.2" rot="R90"/>
-<instance part="U$1" gate="G$1" x="274.32" y="15.24"/>
+<instance part="U$1" gate="G$1" x="297.18" y="15.24"/>
 <instance part="JP2" gate="G$1" x="10.16" y="246.38"/>
 <instance part="JP4" gate="G$1" x="302.26" y="246.38"/>
 <instance part="S2" gate="1" x="137.16" y="187.96" rot="MR0"/>
