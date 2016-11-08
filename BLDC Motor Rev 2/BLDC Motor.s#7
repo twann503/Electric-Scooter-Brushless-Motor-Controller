@@ -13,9 +13,9 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="7" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
@@ -24,7 +24,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
+<layer number="31" name="tCream" color="11" fill="4" visible="no" active="no"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
@@ -42,9 +42,9 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
@@ -8899,9 +8899,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="22pF"/>
 <part name="POWER" library="led" deviceset="LED" device="SML0805"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="470"/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="PTH-1/4W" value="470"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="HALL" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="HALLSENSORS" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="IC2" library="linear" deviceset="78*" device="TV" technology="15"/>
@@ -8918,7 +8918,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="TMP36" library="SparkFun" deviceset="TMP36" device="SOIC"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="S" value="OSHW-LOGOS"/>
+<part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="M"/>
 <part name="JP2" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP4" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="S2" library="SparkFun" deviceset="SWITCH-SPST" device="PTH_LOCK"/>
@@ -8965,13 +8965,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="Q12" library="D2PAK-7" deviceset="NMOSFET-D2PAK-7" device="" value="IRFS"/>
 <part name="Q15" library="D2PAK-7" deviceset="NMOSFET-D2PAK-7" device="" value="IRFS"/>
 <part name="Q18" library="D2PAK-7" deviceset="NMOSFET-D2PAK-7" device="" value="IRFS"/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="187.96" y="254" size="1.778" layer="91">Supply Voltage: 22.2V</text>
-<text x="325.12" y="15.24" size="1.778" layer="91">2</text>
-<text x="330.2" y="5.08" size="1.778" layer="91">Forrest Kaminski</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8994,7 +8993,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="P+4" gate="VCC" x="147.32" y="246.38"/>
 <instance part="R2" gate="G$1" x="147.32" y="226.06" rot="R90"/>
 <instance part="GND4" gate="1" x="147.32" y="215.9"/>
-<instance part="HALL" gate="A" x="172.72" y="238.76"/>
+<instance part="HALLSENSORS" gate="A" x="172.72" y="238.76"/>
 <instance part="GND5" gate="1" x="40.64" y="228.6"/>
 <instance part="IC1" gate="A1" x="208.28" y="220.98"/>
 <instance part="IC2" gate="A1" x="208.28" y="243.84"/>
@@ -9011,7 +9010,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="TMP36" gate="G$1" x="129.54" y="205.74" rot="MR0"/>
 <instance part="P+7" gate="VCC" x="142.24" y="208.28" rot="R270"/>
 <instance part="GND18" gate="1" x="142.24" y="203.2" rot="R90"/>
-<instance part="U$1" gate="G$1" x="297.18" y="15.24"/>
+<instance part="U$1" gate="G$1" x="274.32" y="15.24"/>
 <instance part="JP2" gate="G$1" x="10.16" y="246.38"/>
 <instance part="JP4" gate="G$1" x="302.26" y="246.38"/>
 <instance part="S2" gate="1" x="137.16" y="187.96" rot="MR0"/>
@@ -9058,6 +9057,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="Q12" gate="G$1" x="274.32" y="96.52"/>
 <instance part="Q15" gate="G$1" x="223.52" y="96.52"/>
 <instance part="Q18" gate="G$1" x="172.72" y="96.52"/>
+<instance part="C4" gate="G$1" x="35.56" y="198.12" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9083,13 +9083,17 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="38.1" y1="175.26" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="167.64" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="210.82" x2="30.48" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="208.28" x2="30.48" y2="198.12" width="0.1524" layer="91"/>
 <junction x="30.48" y="208.28"/>
-<wire x1="30.48" y1="208.28" x2="30.48" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="198.12" x2="30.48" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="167.64" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
 <junction x="38.1" y="167.64"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <junction x="38.1" y="175.26"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="198.12" x2="30.48" y2="198.12" width="0.1524" layer="91"/>
+<junction x="30.48" y="198.12"/>
 </segment>
 <segment>
 <pinref part="USB" gate="1" pin="3"/>
@@ -9108,7 +9112,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="147.32" y1="218.44" x2="147.32" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HALL" gate="A" pin="5"/>
+<pinref part="HALLSENSORS" gate="A" pin="5"/>
 <wire x1="170.18" y1="233.68" x2="162.56" y2="233.68" width="0.1524" layer="91"/>
 <label x="160.02" y="233.68" size="1.778" layer="95"/>
 </segment>
@@ -9294,6 +9298,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="218.44" x2="45.72" y2="218.44" width="0.1524" layer="91"/>
 <junction x="45.72" y="218.44"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="198.12" x2="45.72" y2="198.12" width="0.1524" layer="91"/>
+<junction x="45.72" y="198.12"/>
 </segment>
 <segment>
 <pinref part="USB" gate="1" pin="4"/>
@@ -9313,7 +9320,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="147.32" y1="241.3" x2="147.32" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HALL" gate="A" pin="1"/>
+<pinref part="HALLSENSORS" gate="A" pin="1"/>
 <wire x1="170.18" y1="243.84" x2="162.56" y2="243.84" width="0.1524" layer="91"/>
 <label x="160.02" y="243.84" size="1.778" layer="95"/>
 </segment>
@@ -9609,7 +9616,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_A" class="0">
 <segment>
-<pinref part="HALL" gate="A" pin="2"/>
+<pinref part="HALLSENSORS" gate="A" pin="2"/>
 <wire x1="170.18" y1="241.3" x2="162.56" y2="241.3" width="0.1524" layer="91"/>
 <label x="154.94" y="241.3" size="1.778" layer="95"/>
 </segment>
@@ -9621,7 +9628,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_B" class="0">
 <segment>
-<pinref part="HALL" gate="A" pin="3"/>
+<pinref part="HALLSENSORS" gate="A" pin="3"/>
 <wire x1="170.18" y1="238.76" x2="162.56" y2="238.76" width="0.1524" layer="91"/>
 <label x="154.94" y="238.76" size="1.778" layer="95"/>
 </segment>
@@ -9633,7 +9640,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </net>
 <net name="HALL_C" class="0">
 <segment>
-<pinref part="HALL" gate="A" pin="4"/>
+<pinref part="HALLSENSORS" gate="A" pin="4"/>
 <wire x1="170.18" y1="236.22" x2="162.56" y2="236.22" width="0.1524" layer="91"/>
 <label x="154.94" y="236.22" size="1.778" layer="95"/>
 </segment>
@@ -9773,9 +9780,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="Q11" gate="G$1" pin="S"/>
 <wire x1="149.86" y1="91.44" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="93.98" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <junction x="149.86" y="93.98"/>
-<pinref part="Q18" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -9791,9 +9797,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="Q14" gate="G$1" pin="S"/>
 <wire x1="200.66" y1="91.44" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="93.98" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 <junction x="200.66" y="93.98"/>
-<pinref part="Q15" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -9809,9 +9814,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="Q17" gate="G$1" pin="S"/>
 <wire x1="251.46" y1="91.44" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="93.98" x2="251.46" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="93.98" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="93.98" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
 <junction x="251.46" y="93.98"/>
-<pinref part="Q12" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="PHASEA" class="0">
