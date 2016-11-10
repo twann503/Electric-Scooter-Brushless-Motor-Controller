@@ -5335,6 +5335,11 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <symbol name="STAND-OFF">
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-A3" prefix="FRAME">
@@ -6081,6 +6086,19 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </technologies>
 </device>
 <device name="TIGHT" package="STAND-OFF-TIGHT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8967,6 +8985,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R16" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22k"/>
 <part name="JP1" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP2" library="SparkFun" deviceset="STAND-OFF" device=""/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="22pf"/>
+<part name="C6" library="SparkFun" deviceset="CAP" device="0805" value="22pf"/>
+<part name="C7" library="SparkFun" deviceset="CAP" device="0805" value="22pf"/>
+<part name="GND26" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND27" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND28" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9062,6 +9086,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="R16" gate="G$1" x="187.96" y="218.44" rot="R90"/>
 <instance part="JP1" gate="G$1" x="15.24" y="223.52"/>
 <instance part="JP2" gate="G$1" x="15.24" y="208.28"/>
+<instance part="C4" gate="G$1" x="43.18" y="203.2" rot="R90"/>
+<instance part="C6" gate="G$1" x="43.18" y="198.12" rot="R90"/>
+<instance part="C7" gate="G$1" x="50.8" y="193.04" rot="R90"/>
+<instance part="GND26" gate="1" x="35.56" y="203.2" rot="R270"/>
+<instance part="GND27" gate="1" x="35.56" y="198.12" rot="R270"/>
+<instance part="GND28" gate="1" x="43.18" y="193.04" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9129,6 +9159,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="187.96" y1="213.36" x2="187.96" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="210.82" x2="208.28" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="210.82" x2="208.28" y2="213.36" width="0.1524" layer="91"/>
+<junction x="208.28" y="210.82"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A1" pin="GND"/>
@@ -9260,6 +9291,20 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<junction x="45.72" y="193.04"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -9301,6 +9346,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="218.44" x2="45.72" y2="218.44" width="0.1524" layer="91"/>
 <junction x="45.72" y="218.44"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<junction x="45.72" y="198.12"/>
 </segment>
 <segment>
 <pinref part="USB" gate="1" pin="4"/>
@@ -9886,6 +9934,13 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="124.46" y1="190.5" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="195.58" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="195.58" x2="180.34" y2="223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="AREF"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<junction x="53.34" y="193.04"/>
 </segment>
 </net>
 </nets>
