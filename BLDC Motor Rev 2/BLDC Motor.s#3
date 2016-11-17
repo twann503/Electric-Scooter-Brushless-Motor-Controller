@@ -8882,12 +8882,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
-<part name="R17" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R19" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R20" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R21" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R22" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R17" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R19" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R20" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R21" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R22" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
@@ -9402,11 +9402,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="106.68" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="Q16" gate="G$1" pin="G"/>
-<wire x1="236.22" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="78.74" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
-<label x="231.14" y="81.28" size="1.778" layer="95"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="Q10" gate="G$1" pin="G"/>
+<wire x1="129.54" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="81.28" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<label x="124.46" y="83.82" size="1.778" layer="95"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PULSE3" class="0">
@@ -9442,11 +9442,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="106.68" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="Q10" gate="G$1" pin="G"/>
-<wire x1="129.54" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="127" y1="81.28" x2="127" y2="78.74" width="0.1524" layer="91"/>
-<label x="124.46" y="83.82" size="1.778" layer="95"/>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="Q16" gate="G$1" pin="G"/>
+<wire x1="236.22" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="78.74" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
+<label x="231.14" y="81.28" size="1.778" layer="95"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PULSE5" class="0">
@@ -9762,11 +9762,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="162.56" x2="241.3" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="Q7" gate="G$1" pin="G"/>
 <wire x1="241.3" y1="165.1" x2="241.3" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="162.56" x2="246.38" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="165.1" x2="241.3" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
 <junction x="241.3" y="165.1"/>
 </segment>
 </net>
