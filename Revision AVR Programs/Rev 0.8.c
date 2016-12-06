@@ -193,6 +193,6 @@ int main(void)
 		//}
 		//else
 			//turnOff();
-		//body of while loop
+		//body of while loo
 	}
 }
