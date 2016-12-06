@@ -22,10 +22,10 @@ int main(void)
 	volatile int Speed = 150;
 
 	//SET UP FOR TIMER2 PWM PINS
-	OCR2A = 128;								// sets PWM for 50% duty cycle
+	OCR2A = 128;					// sets PWM for 50% duty cycle
 	TCCR2A |= (1 << COM2A1) | (1 << COM2B1);	// set non - inverting mode for both lines
 	TCCR2A |= (1 << WGM21) | (1 << WGM20);		// set fast PWM Mode
-	TCCR2B |= (1 << CS21);						// sets pre-scaler to 8 and starts PWM
+	TCCR2B |= (1 << CS21);				// sets pre-scaler to 8 and starts PWM
 	
 
 	//SET UP FOR HALL EFFECT PINS
